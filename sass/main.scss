@@ -203,6 +203,28 @@ body{
     }
 }
 
+//! HERO IMG
+
+.hero-img{
+    position: relative;
+    padding: 10em 2em;
+    @include mixins.heroImg('../img/hero-img-mini.jpg');
+    text-align: center;
+    color: colors.$pure-white;
+    overflow: hidden;
+
+    &__title{
+        padding: 1em 0;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 0.5em;
+        font-size: 4.8rem;
+    }
+
+    &__text{
+        padding: 1em 0;
+    }
+}
+
 
 // !================================
 // ! MEDIA
@@ -265,6 +287,19 @@ body{
         }
     }
 
+    .hero-img{
+        padding: 30rem 2em;
+        
+        hr{
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        &__text{
+            font-size: 2.2rem;
+        }
+    }
+
 }
 
 @media (min-width: 992px){
@@ -305,6 +340,19 @@ body{
 
         &__text{
             font-size: 2.2rem;
+        }
+    }
+
+    .hero-img{
+        padding: 40em 2em;
+        background-image: colors.$blue-gradient, url('../img/hero-img-big.jpg');
+
+        &__title{
+            font-size: 7.2rem;
+        }
+        hr{
+            width: 60%;
+            max-width: 900px;
         }
     }
 }
