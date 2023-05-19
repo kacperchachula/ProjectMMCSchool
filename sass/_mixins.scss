@@ -1,17 +1,29 @@
-@use './colors' as colors;
+@use "./colors" as colors;
 
-@mixin burgerBtn{
-    position: absolute;
-    right: 0;
-    height: 3px;
-    content: '';
-    background-color: colors.$pure-white;
-    transition: width .3s;
+@mixin burgerBtn {
+	position: absolute;
+	right: 0;
+	height: 3px;
+	content: "";
+	background-color: colors.$pure-white;
+	transition: width 0.3s;
 }
 
-@mixin heroImg($bgImg){
-    background-image: colors.$blue-gradient, url($bgImg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+@mixin heroImg($bgImg) {
+	background-image: colors.$blue-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@mixin islandCardStyle {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+@mixin islandCardStyle {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
